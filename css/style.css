@@ -1,0 +1,186 @@
+@charset "utf-8";
+@import url("common.css");
+
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #24292e;
+}
+section{
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#f_item1 img{
+  margin: 80px 0 0 280px;
+}
+
+#Fbox{
+  display: flex;
+  margin-bottom: 50px;
+}
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+}
+
+#f_item2{
+  margin: 80px 0 0 600px;
+  }
+
+  #Fbox ul li{
+    margin-right: 30px;
+  }
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual{
+  padding: 0 4%;
+}
+#mainvisual img{
+  width: 100%;
+  height: 420px;
+  margin-bottom: 30px;
+}
+/*-------------------------------------------
+About
+-------------------------------------------*/
+h2{
+  text-align: center;
+  font-size: 50px;
+}
+#about{
+  margin-bottom: 70px;
+}
+#about_2{
+  margin-left: 60px;
+}
+/*-------------------------------------------
+Works
+-------------------------------------------*/
+#work h2{
+  text-align: center;
+  font-size: 50px;
+}
+#Works img{
+  width: 200px;
+}
+#works_2{
+  display: block;
+  margin-left: 60px;
+}
+#Works{
+  margin-bottom: 70px;
+}
+
+/*-------------------------------------------
+News
+-------------------------------------------*/
+#News ul li{
+  list-style-type: none;
+  padding: 20px 0 20px 160px;
+  border-bottom: dotted 1px black;
+  text-indent: -130px;
+}
+#News_2{
+  margin-left: 60px;
+}
+time{
+  margin-right: 20px;
+}
+#News{
+  margin-bottom: 70px;
+}
+/*-------------------------------------------
+Contact
+-------------------------------------------*/
+#Contact_2{
+  margin-left: 170px;
+}
+#text{
+  display: flex;
+}
+.butt{
+ margin-left: 200px;
+ margin-top: 20px;
+}
+.butt button:hover{
+  background-color: #24292e;
+  color: #fff;
+}
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+footer {
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  text-align: center;
+}
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 600px) {
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+}
+@media screen and (max-width:600px){
+  #f_item1 img{
+    margin-left: 180px;
+  }
+  #Fbox{
+    display: block;
+
+  }
+  #f_item2{
+    margin: 80px 100px 0 60px;
+    }
+  h2{
+      margin-right: 350px;
+      font-size: 30px;
+    }
+    #about_2{
+     margin-left: -10px;
+     font-size: 10px;
+     width: 400px;
+     margin-left: 20px;
+    }
+    #works_2{
+      display: block;
+      margin-left:110px;
+    }
+    #Work_phot1 img{
+      display: block;
+      margin-bottom: 10px;
+    }
+    #Work_phot2 img{
+      display: block;
+      margin-bottom: 10px;
+    }
+    #News_2{
+      font-size: 8px;
+      margin-left: 20px;
+      width: 400px;
+    
+    }
+    #Contact_2{
+      font-size: 8px;
+      margin-left: 20px;
+      width: 400px;
+    }
+    .butt{
+      margin-left: 170px;
+    }
+}
